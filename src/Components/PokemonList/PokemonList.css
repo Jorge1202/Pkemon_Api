@@ -5,3 +5,9 @@
     margin: 3rem;
     padding: 0 3rem 3rem 0;
 }
+
+.container-skeleton{
+    border: 1px solid #ccc;
+    padding: 1.5rem 1rem;
+    border-radius: 7px;
+}

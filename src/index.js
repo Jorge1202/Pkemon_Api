@@ -4,10 +4,8 @@ import App from './App';
 import { applyMiddleware ,compose, legacy_createStore as createStore } from 'redux';
 import { thunk } from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { pokemonsReducer } from './Reducers/Pokemons';
+import { rootReducer } from './Reducers/rootReducer';
 import { logger } from './Middlewares';
-
-
 
 import './index.css';
 
@@ -20,7 +18,7 @@ const composedEnhancers = composeAlternativo(
   applyMiddleware(thunk, logger)
 )
 
-const store = createStore(pokemonsReducer, composedEnhancers);
+const store = createStore(rootReducer, composedEnhancers);
 
 root.render(
   <React.StrictMode>
