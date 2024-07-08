@@ -11,7 +11,7 @@ import './App.css';
 import 'antd/dist/reset.css';
 
 
-
+///sddf
 function App() {
 
   const pokemons = useSelector(state => state.data.pokemons, shallowEqual)
